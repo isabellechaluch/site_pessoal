@@ -8,9 +8,12 @@ body {
 header {
     width: 100%;
     height: auto;
+    overflow: hidden;
+    display: flex;
 }
 header img {
     width: 100%;
+    height: auto;
 }
 nav {
     width: 100%;
@@ -21,7 +24,6 @@ nav {
     justify-content: center;
     background-color: rgb(244, 230, 207);
     padding: 10px;
-    margin-top: 0;
 }
 .menu {
     width: 90%;
@@ -40,10 +42,118 @@ nav {
 }
 li a:hover {
     background-color: burlywood;
+    color: aliceblue;
 }
 /*INDEX*/
 .section_sobre_mim {
-    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto_sobre_mim {
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    font-size: 1.2em;
+    color: black;
+    text-indent: 20px;
+    margin-left: 5%;
+}
+.texto_sobre_mim h1{
+    text-align: center;
+    color: rgb(31, 178, 134);
+}
+.my_picture {
+    width: 30%;
+    height: auto;
+    display: flex;
+}
+.my_picture img {
+ width: 100%;
+ height: auto;
+}
+.title {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(244, 230, 207);
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(65, 56, 57);
+}
+.section_progr {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(65, 56, 57);
+}
+.box_progr {
+    width: 30%;
+    text-align: center;
+    color: rgb(244, 230, 207);
+    font-size: 1.2em;
+    padding: 10px;
+    border: solid 3px rgb(244, 230, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button_progr button{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(244, 230, 207);
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.title_formacao {
+    width: 100%;
+    background-color: rgb(31, 178, 134);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.section_formacao {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url(imagens/fundo_mar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box_formacao {
+    width: 30%;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button_formacao button {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(31, 178, 134);
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 /*EXPERIENCIAS*/
