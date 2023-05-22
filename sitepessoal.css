@@ -4,6 +4,9 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
+body p {
+    font-size: 1.1em;
+}
 /*header repete para todos*/
 header {
     width: 100%;
@@ -27,6 +30,8 @@ nav {
 }
 .menu {
     width: 90%;
+    height: auto;
+    overflow: hidden;
     display: flex;
     list-style: none;
     align-items: center;
@@ -47,26 +52,29 @@ li a:hover {
 /*INDEX*/
 .section_sobre_mim {
     width: 100%;
+    height: auto;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .texto_sobre_mim {
-    width: 60%;
+    width: 50%;
     height: auto;
+    overflow: hidden;
     text-align: justify;
-    font-size: 1.2em;
     color: black;
     text-indent: 20px;
-    margin-left: 5%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .texto_sobre_mim h1{
     text-align: center;
     color: rgb(31, 178, 134);
 }
 .my_picture {
-    width: 30%;
+    width: 40%;
     height: auto;
+    overflow: hidden;
     display: flex;
 }
 .my_picture img {
@@ -95,9 +103,10 @@ li a:hover {
 }
 .box_progr {
     width: 30%;
+    height: auto;
+    overflow: hidden;
     text-align: center;
     color: rgb(244, 230, 207);
-    font-size: 1.2em;
     padding: 10px;
     border: solid 3px rgb(244, 230, 207);
     display: flex;
@@ -117,6 +126,8 @@ li a:hover {
 }
 .title_formacao {
     width: 100%;
+    height: auto;
+    overflow: hidden;
     background-color: rgb(31, 178, 134);
     text-align: center;
     padding: 10px;
@@ -136,8 +147,9 @@ li a:hover {
 }
 .box_formacao {
     width: 30%;
+    height: auto;
+    overflow: hidden;
     text-align: center;
-    font-size: 1.2em;
     padding: 10px;
     backdrop-filter: blur(8px);
     display: flex;
@@ -155,15 +167,43 @@ li a:hover {
     margin-top: 10px;
     box-sizing: border-box;
 }
-
 /*EXPERIENCIAS*/
-.circle_1 {
-    border-radius: 50%;
-}
-.circle_1 img {
+.title_jobs {
     width: 100%;
-    height: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.section_job {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.circle {
+    width: 20%; 
+    height: auto;
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+.circle img {
+    width: 100%;
+    border-radius: 50%;
     object-fit: cover;
+}
+.job_text {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /*Habilidades*/
 .section_hab {
@@ -182,3 +222,35 @@ li a:hover {
     width: 100px;
     height: 100px;
   }
+/*PROJETOS*/
+.box_repository {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(31, 178, 134);
+    display: flex;
+    justify-content: center;
+}
+.title_repository {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: blueviolet;
+}
+.button_repository {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: cyan;
+}
+.button_repository button {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgb(65, 56, 57);
+    
+}    
