@@ -22,25 +22,31 @@ nav {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: rgb(244, 230, 207);
+    padding: 1%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(244, 230, 207);
-    padding: 10px;
 }
 .menu {
-    width: 90%;
+    width: 100%;
     height: auto;
     overflow: hidden;
-    display: flex;
     list-style: none;
-    align-items: center;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+.menu li {
+    text-align: center;
+    background-color: brown;
 }
 .menu a {
     width: 20%;
     height: 100%;
-    font-size: x-large;
+    font-size: 1.3em;
     color: rgb(73, 74, 74);
     text-align: center;
     text-decoration: none;
@@ -76,10 +82,11 @@ li a:hover {
     height: auto;
     overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .my_picture img {
  width: 100%;
- height: auto;
 }
 .title {
     width: 100%;
@@ -95,11 +102,12 @@ li a:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: rgb(65, 56, 57);
     padding: 30px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(65, 56, 57);
+    flex-wrap: wrap;
 }
 .box_progr {
     width: 30%;
@@ -144,6 +152,7 @@ li a:hover {
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .box_formacao {
     width: 30%;
@@ -205,12 +214,14 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
 }
-/*Habilidades*/
+/*HABILIDADES*/
 .section_hab {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px; /* Ajuste a altura conforme necessário */
   }
   
   .row {
@@ -253,4 +264,24 @@ li a:hover {
     padding: 10px;
     background-color: rgb(65, 56, 57);
     
-}    
+}
+@media screen and (max-width: 1100px) {
+    .section_sobre_mim {
+        width: 100%;
+        flex-direction: column;
+    }
+    .texto_sobre_mim, .my_picture {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .menu li {
+        width: 100%;
+    }
+    .box_progr, .box_formacao {
+        width: 90%;
+    }   
+    .box_progr, .box_formacao {
+        margin-bottom: 2%;
+    }
+}  
