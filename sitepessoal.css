@@ -2,21 +2,19 @@
     margin: 0;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-body p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
 }
 /*header repete para todos*/
 header {
     width: 100%;
-    height: auto;
-    overflow: hidden;
+    height: 750px;
+    background-image: url(imagens/fundo_header.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
-}
-header img {
-    width: 100%;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
 }
 nav {
     width: 100%;
@@ -55,13 +53,44 @@ li a:hover {
     background-color: burlywood;
     color: aliceblue;
 }
+.container_header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.488);
+}
+.box_title {
+    width: 65%;
+    height: auto;
+    overflow: hidden;
+    font-size: 2em;
+    color: aliceblue;
+}
 /*INDEX*/
 .section_sobre_mim {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: white;
+    padding: 3%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.my_picture {
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+.my_picture img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .texto_sobre_mim {
     width: 50%;
@@ -77,17 +106,6 @@ li a:hover {
     text-align: center;
     color: rgb(31, 178, 134);
 }
-.my_picture {
-    width: 40%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.my_picture img {
- width: 100%;
-}
 .title {
     width: 100%;
     height: auto;
@@ -97,6 +115,12 @@ li a:hover {
     padding: 15px;
     box-sizing: border-box;
     background-color: rgb(65, 56, 57);
+}
+.line_title {
+    width: 30%;
+    height: 10px;
+    background-color: rgb(65, 56, 57);
+    color: rgba(240, 248, 255, 0);
 }
 .section_progr {
     width: 100%;
