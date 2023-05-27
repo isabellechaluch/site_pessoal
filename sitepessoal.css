@@ -3,7 +3,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 /*header repete para todos*/
 header {
@@ -46,7 +46,6 @@ nav {
 .menu a {
     width: 20%;
     height: 100%;
-    font-size: 1.3em;
     color: rgb(73, 74, 74);
     text-align: center;
     text-decoration: none;
@@ -105,9 +104,17 @@ li a:hover {
 }
 .texto_sobre_mim h1{
     text-align: center;
+    font-size: 2rem;
     color: rgb(65, 56, 57)
 }
-.title {
+.line_title {
+    width: 30%;
+    height: 6px;
+    background-color: rgb(65, 56, 57);
+    color: rgba(240, 248, 255, 0);
+}
+/*HABILIDADES*/
+.title_hab {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -117,13 +124,7 @@ li a:hover {
     box-sizing: border-box;
     background-color: rgb(65, 56, 57);
 }
-.line_title {
-    width: 30%;
-    height: 6px;
-    background-color: rgb(65, 56, 57);
-    color: rgba(240, 248, 255, 0);
-}
-#section_progr {
+#section_hab {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -134,7 +135,7 @@ li a:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.box_progr {
+.box_hab {
     width: 30%;
     height: auto;
     overflow: hidden;
@@ -146,12 +147,12 @@ li a:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-.button_progr button{
+.button_hab button{
     width: 30%;
     height: auto;
     overflow: hidden;
     background-color: rgb(244, 230, 207);
-    font-size: 0.8em;
+    font-size: 0.9rem;
     font-weight: 700;
     border-radius: 5px;
     padding: 5px;
@@ -160,10 +161,13 @@ li a:hover {
 }
 /*FORMACAO*/
 #section_formacao {
-    width: 50%;
+    width: 100%;
     height: auto;
     overflow: hidden;
-    background-image: url(imagens/exp_fundo_branco.jpg);
+    background-image: url(imagens/fundo_form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -172,9 +176,10 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
-    color: rgb(65, 56, 57);
+    font-size: 1.5rem;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 2%;
 }
 .container_form {
     width: 100%;
@@ -185,7 +190,7 @@ li a:hover {
     flex-direction: column;
 }
 .box_formacao {
-    width: 90%;
+    width: 70%;
     height: auto;
     overflow: hidden;
     text-align: center;
@@ -193,14 +198,16 @@ li a:hover {
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 2%;
 }
 .button_formacao button {
     width: 30%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(31, 178, 134);
-    font-size: 0.8em;
+    background-color: rgb(65, 56, 57);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
     border-radius: 5px;
     padding: 5px;
     margin-top: 10px;
@@ -211,6 +218,10 @@ li a:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-image: url(imagens/marmore_branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -219,6 +230,7 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
+    font-size: 1.5rem;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -229,30 +241,23 @@ li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
 }
 .box_exp {
     width: 90%;
     height: auto;
     overflow: hidden;
-    display: flex;
-    background-color: blue;
-}
-.
-.section_job {
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .circle {
     width: 20%; 
     height: auto;
     overflow: hidden; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .circle img {
     width: 100%;
@@ -288,6 +293,8 @@ li a:hover {
     height: 100px;
   }
 /*PROJETOS*/
+.section_projetos {
+}
 .box_repository {
     width: 100%;
     height: auto;
