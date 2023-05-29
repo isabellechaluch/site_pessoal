@@ -136,7 +136,7 @@ li a:hover {
     flex-wrap: wrap;
 }
 .box_hab {
-    width: 30%;
+    width: 25%;
     height: auto;
     overflow: hidden;
     text-align: center;
@@ -168,29 +168,36 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px;
+    padding: 10%;
     box-sizing: border-box;
-}
-.title_formacao {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 2%;
+    display: flex;
 }
 .container_form {
-    width: 100%;
+    width: 90%;
     height: auto;
     overflow: hidden;
+    background-color: rgb(170, 64, 52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title_formacao {
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
+    background-color: #ead3b3;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(65, 56, 57);
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 .box_formacao {
-    width: 70%;
+    width: 33.33%;
     height: auto;
     overflow: hidden;
     text-align: center;
@@ -198,7 +205,6 @@ li a:hover {
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
-    margin-bottom: 2%;
 }
 .button_formacao button {
     width: 30%;
@@ -267,31 +273,67 @@ li a:hover {
 .text_exp {
     width: 40%;
     height: auto;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/*HABILIDADES*/
-.section_hab {
+/*CURSOS*/
+.section_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.title_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(65, 56, 57);
+}
+.container_cursos {
     width: 100%;
     height: auto;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .row {
+    justify-content: space-evenly;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+.box_cursos {
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: coral;
+}
+.text_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.text_cursos h2 {
+   color: rgb(65, 56, 57);
+   font-size: 1.2rem;
+}
+.container_certificados {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .box {
-    width: 100px;
-    height: 100px;
-  }
+}
+.box_certificados {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.box_certificados img {
+    width: 100%;
+}
 /*PROJETOS*/
 .section_projetos {
 }
