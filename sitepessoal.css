@@ -168,41 +168,43 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10%;
+    padding: 5%;
     box-sizing: border-box;
-    display: flex;
-}
-.container_form {
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    background-color: rgb(170, 64, 52);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .title_formacao {
-    width: 33.33%;
+    width: 80%;
     height: auto;
     overflow: hidden;
-    background-color: #ead3b3;
+    background-color: tan;
     text-align: center;
     font-size: 1.5rem;
     color: rgb(65, 56, 57);
-    padding: 10px;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container_form {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    background-color: tan;
+    padding: 1% 5% 5%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .box_formacao {
-    width: 33.33%;
+    width: 40%;
     height: auto;
     overflow: hidden;
     text-align: center;
-    padding: 10px;
-    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
 }
@@ -213,10 +215,10 @@ li a:hover {
     background-color: rgb(65, 56, 57);
     font-size: 0.9rem;
     font-weight: 700;
-    color: white;
+    color: rgb(244, 230, 207);
     border-radius: 5px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 2%;
     box-sizing: border-box;
 }
 /*EXPERIENCIAS*/
@@ -224,46 +226,41 @@ li a:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-image: url(imagens/marmore_branco.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px;
-    box-sizing: border-box;
 }
 .title_exp {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: rgb(65, 56, 57);
     text-align: center;
     font-size: 1.5rem;
-    padding: 10px;
+    color: rgb(244, 230, 207);
+    padding: 1%;
     box-sizing: border-box;
+    margin-bottom: 2%;
 }
 .container_exp {
     width: 100%;
     height: auto;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
 }
 .box_exp {
-    width: 90%;
+    width: 30%;
     height: auto;
     overflow: hidden;
     padding: 1%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
 }
 .circle {
     width: 20%; 
     height: auto;
     overflow: hidden; 
     border-radius: 50%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .circle img {
     width: 100%;
@@ -271,19 +268,20 @@ li a:hover {
     object-fit: cover;
 }
 .text_exp {
-    width: 40%;
+    width: 90%;
     height: auto;
     overflow: hidden;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 /*CURSOS*/
 .section_cursos {
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-image: linear-gradient(rgb(255, 255, 255),  tan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title_cursos {
     width: 100%;
@@ -292,24 +290,26 @@ li a:hover {
     text-align: center;
     font-size: 1.5rem;
     color: rgb(65, 56, 57);
+    padding: 1%;
+    box-sizing: border-box;
 }
 .container_cursos {
-    width: 100%;
+    width: 60%;
     height: auto;
     overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
     padding: 1%;
     box-sizing: border-box;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
 }
 .box_cursos {
-    width: 20%;
+    width: 25%;
     height: auto;
     overflow: hidden;
     padding: 1%;
     box-sizing: border-box;
-    background-color: coral;
+    background-color: rgb(172, 165, 166);
 }
 .text_cursos {
     width: 100%;
@@ -333,9 +333,14 @@ li a:hover {
 }
 .box_certificados img {
     width: 100%;
+    height: 90%;
 }
 /*PROJETOS*/
 .section_projetos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: tan;
 }
 .box_repository {
     width: 100%;
