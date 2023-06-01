@@ -1,3 +1,10 @@
+:root {
+    --cor-bege-claro: rgb(244, 230, 207);
+    --cor-cinza: #e4dee4;
+    --cor-marrom-claro: #9f807d; 
+    --cor-marrom_escuro: #916f5f;
+    --cor-textos: rgb(55, 56, 56);
+}
 * {
     margin: 0;
 }
@@ -20,7 +27,6 @@ nav {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(244, 230, 207);
     padding: 1%;
     box-sizing: border-box;
     position: fixed;
@@ -36,23 +42,17 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: blue;
+    background-color: darkcyan;
 }
 .menu li {
     text-align: center;
-    background-color: brown;
+    width: 30%;
 }
 .menu a {
-    width: 20%;
-    height: 100%;
-    color: rgb(73, 74, 74);
+    color: white;
     text-align: center;
     text-decoration: none;
-}
-li a:hover {
-    background-color: burlywood;
-    color: aliceblue;
+    background-color: aqua;
 }
 .container_header {
     width: 100%;
@@ -67,14 +67,13 @@ li a:hover {
     height: auto;
     overflow: hidden;
     font-size: 2em;
-    color: aliceblue;
+    color: var(--cor-bege-claro);
 }
 /*INDEX*/
 .section_sobre_mim {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: white;
     padding: 3%;
     box-sizing: border-box;
     display: flex;
@@ -97,7 +96,7 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: justify;
-    color: black;
+    color: rgb(55, 56, 56);
     text-indent: 20px;
     padding: 10px;
     box-sizing: border-box;
@@ -105,13 +104,12 @@ li a:hover {
 .texto_sobre_mim h1{
     text-align: center;
     font-size: 2rem;
-    color: rgb(65, 56, 57)
+    color: var(--cor-marrom_escuro);
 }
 .line_title {
     width: 30%;
     height: 6px;
-    background-color: rgb(65, 56, 57);
-    color: rgba(240, 248, 255, 0);
+    background-color: var(--cor-marrom_escuro)
 }
 /*HABILIDADES*/
 .title_hab {
@@ -119,16 +117,16 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
-    color: rgb(244, 230, 207);
+    color: var(--cor-bege-claro);
     padding: 15px;
     box-sizing: border-box;
-    background-color: rgb(65, 56, 57);
+    background-color: var(--cor-marrom_escuro);
 }
 #section_hab {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(65, 56, 57);
+    background-color: var(--cor-marrom_escuro);
     padding: 30px;
     box-sizing: border-box;
     display: flex;
@@ -140,9 +138,9 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
-    color: rgb(244, 230, 207);
+    color: var(--cor-bege-claro);
     padding: 10px;
-    border: solid 3px rgb(244, 230, 207);
+    border: solid 3px var(--cor-bege-claro);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -151,7 +149,7 @@ li a:hover {
     width: 30%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(244, 230, 207);
+    background-color: var(--cor-bege-claro);
     font-size: 0.9rem;
     font-weight: 700;
     border-radius: 5px;
@@ -182,7 +180,7 @@ li a:hover {
     background-color: tan;
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(65, 56, 57);
+    color: var(--cor-textos);
     padding: 2%;
     box-sizing: border-box;
     display: flex;
@@ -205,6 +203,7 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
+    color: var(--cor-textos);
     display: flex;
     flex-direction: column;
 }
@@ -212,10 +211,10 @@ li a:hover {
     width: 30%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(65, 56, 57);
+    background-color: var(--cor-marrom_escuro);
     font-size: 0.9rem;
     font-weight: 700;
-    color: rgb(244, 230, 207);
+    color: var(--cor-bege-claro);
     border-radius: 5px;
     padding: 5px;
     margin-top: 2%;
@@ -231,10 +230,10 @@ li a:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: rgb(65, 56, 57);
+    background-color: var(--cor-marrom-claro);
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(244, 230, 207);
+    color: var(--cor-textos);
     padding: 1%;
     box-sizing: border-box;
     margin-bottom: 2%;
@@ -272,13 +271,14 @@ li a:hover {
     height: auto;
     overflow: hidden;
     text-align: center;
+    color: var(--cor-textos);
 }
 /*CURSOS*/
 .section_cursos {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-image: linear-gradient(rgb(255, 255, 255),  tan);
+    background-color: var(--cor-bege-claro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +289,7 @@ li a:hover {
     overflow: hidden;
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(65, 56, 57);
+    color: var(--cor-textos);
     padding: 1%;
     box-sizing: border-box;
 }
@@ -301,15 +301,15 @@ li a:hover {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    background-color: brown;
 }
 .box_cursos {
     width: 25%;
     height: auto;
     overflow: hidden;
+    background-color: var(--cor-marrom-claro);
     padding: 1%;
     box-sizing: border-box;
-    background-color: rgb(172, 165, 166);
+    box-shadow: 5px 5px 10px #00000096;
 }
 .text_cursos {
     width: 100%;
