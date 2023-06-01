@@ -1,15 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600&family=Roboto&family=Wix+Madefor+Display:wght@400;700&display=swap');
 :root {
-    --cor-bege-claro: rgb(244, 230, 207);
-    --cor-cinza: #e4dee4;
-    --cor-marrom-claro: #9f807d; 
-    --cor-marrom_escuro: #916f5f;
-    --cor-textos: rgb(55, 56, 56);
+    --cor-bege: #e1d3b6;
+    --cor-marrom-claro: #c0a290; 
+    --cor-marrom-escuro: #90604c;
 }
 * {
     margin: 0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'oxygen';
     font-size: 1.1rem;
 }
 /*header repete para todos*/
@@ -67,7 +66,7 @@ nav {
     height: auto;
     overflow: hidden;
     font-size: 2em;
-    color: var(--cor-bege-claro);
+    color: var(--cor-bege);
 }
 /*INDEX*/
 .section_sobre_mim {
@@ -81,15 +80,14 @@ nav {
     align-items: center;
 }
 .my_picture {
-    width: 20%;
+    width: 25%;
     height: auto;
-    overflow: hidden; 
-    border-radius: 50%; 
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #000; 
+    display: flex;
 }
 .my_picture img {
     width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
 }
 .texto_sobre_mim {
     width: 50%;
@@ -102,60 +100,133 @@ nav {
     box-sizing: border-box;
 }
 .texto_sobre_mim h1{
-    text-align: center;
     font-size: 2rem;
-    color: var(--cor-marrom_escuro);
+    color: var(--cor-marrom-escuro);
 }
 .line_title {
-    width: 30%;
-    height: 6px;
-    background-color: var(--cor-marrom_escuro)
+    width: 45%;
+    height: 5px;
+    background-color: var(--cor-marrom-escuro)
 }
 /*HABILIDADES*/
-.title_hab {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    color: var(--cor-bege-claro);
-    padding: 15px;
-    box-sizing: border-box;
-    background-color: var(--cor-marrom_escuro);
-}
 #section_hab {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: var(--cor-marrom_escuro);
-    padding: 30px;
+    background-color: var(--cor-marrom-escuro);
+    padding: 5%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 .box_hab {
+    width: 10%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.title_hab {
     width: 25%;
     height: auto;
     overflow: hidden;
     text-align: center;
-    color: var(--cor-bege-claro);
-    padding: 10px;
-    border: solid 3px var(--cor-bege-claro);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
 }
-.button_hab button{
+/*PROJETOS*/
+#section_projetos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--cor-marrom-claro);
+    display: flex;
+    justify-content: center;
+}
+.container_projetos {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+.box_projeto {
     width: 30%;
     height: auto;
     overflow: hidden;
-    background-color: var(--cor-bege-claro);
-    font-size: 0.9rem;
-    font-weight: 700;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
+    background-color: white;
+}
+.button {
+    width: 30%;
+    background-color: var(--cor-marrom-escuro);
+    color: white ;
+}
+/*CURSOS*/
+#section_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-marrom-escuro);
+    padding: 1%;
     box-sizing: border-box;
+}
+.container_cursos {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.box_cursos {
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #00000096;
+}
+.text_cursos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.text_cursos h2 {
+   color: rgb(65, 56, 57);
+   font-size: 1.2rem;
+}
+.container_certificados {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.box_certificados {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.box_certificados img {
+    width: 100%;
+    height: 90%;
 }
 /*FORMACAO*/
 #section_formacao {
@@ -173,52 +244,45 @@ nav {
     align-items: center;
     justify-content: center;
 }
-.title_formacao {
-    width: 80%;
+.container_form {
+    width: 70%;
     height: auto;
     overflow: hidden;
-    background-color: tan;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--cor-textos);
+    background-color: var(--cor-bege);
     padding: 2%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.container_form {
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    background-color: tan;
-    padding: 1% 5% 5%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.box_formacao {
-    width: 40%;
+.title_formacao {
+    width: 45%;
     height: auto;
     overflow: hidden;
     text-align: center;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha_formacao {
+    width: 5px;
+    height: 500px;
+    background-color: black;
+}
+.box_formacao {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
     color: var(--cor-textos);
     display: flex;
     flex-direction: column;
 }
-.button_formacao button {
-    width: 30%;
-    height: auto;
-    overflow: hidden;
-    background-color: var(--cor-marrom_escuro);
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--cor-bege-claro);
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 2%;
-    box-sizing: border-box;
+.text_formacao {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20%;
 }
 /*EXPERIENCIAS*/
 .section_exp {
@@ -230,7 +294,7 @@ nav {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: var(--cor-marrom-claro);
+    background-color: var(--cor-cinza);
     text-align: center;
     font-size: 1.5rem;
     color: var(--cor-textos);
@@ -273,105 +337,13 @@ nav {
     text-align: center;
     color: var(--cor-textos);
 }
-/*CURSOS*/
-.section_cursos {
+footer {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: var(--cor-bege-claro);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.title_cursos {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--cor-textos);
-    padding: 1%;
+    background-color: #90604c;
+    padding: 2%;
     box-sizing: border-box;
-}
-.container_cursos {
-    width: 60%;
-    height: auto;
-    overflow: hidden;
-    padding: 1%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-}
-.box_cursos {
-    width: 25%;
-    height: auto;
-    overflow: hidden;
-    background-color: var(--cor-marrom-claro);
-    padding: 1%;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 10px #00000096;
-}
-.text_cursos {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-}
-.text_cursos h2 {
-   color: rgb(65, 56, 57);
-   font-size: 1.2rem;
-}
-.container_certificados {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-.box_certificados {
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-}
-.box_certificados img {
-    width: 100%;
-    height: 90%;
-}
-/*PROJETOS*/
-.section_projetos {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: tan;
-}
-.box_repository {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: rgb(31, 178, 134);
-    display: flex;
-    justify-content: center;
-}
-.title_repository {
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    background-color: blueviolet;
-}
-.button_repository {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: cyan;
-}
-.button_repository button {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding: 10px;
-    background-color: rgb(65, 56, 57);
-    
 }
 @media screen and (max-width: 1100px) {
     .section_sobre_mim {
