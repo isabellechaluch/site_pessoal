@@ -1,28 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site pessoal Isabelle Cristine Haluch</title>
-    <link rel="stylesheet" type="text/css" href="sitepessoal.css">
-    <link rel="shortcut icon" href="imagens/favicon_icone.jpg" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        .section_projetos {
+    width: 100%;
+    background-color: var(--cor-marrom-claro);
+    display: flex;
+    justify-content: center;
+}
+.container_projetos {
+    width: 80%;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+.box_projeto {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.img_projeto {
+    width: 90%;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_projeto img {
+    width: 100%;
+}
+.button_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: 50%;
+    background-color: var(--cor-marrom-escuro);
+    color: white;
+}
+    </style>
 </head>
 <body>
-    <header>
-        <img src="imagens/imagem_section_horizontal.jpg">
-    </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="experiencias.html">EXPERIENCIAS</a></li>
-            <li><a href="habilidades.html">HABILIDADES</a></li>
-            <li><a href="projetos.html">PROJETOS</a></li>
-            <li><a href="contatos.html">CONTATOS</a></li>
-        </ul>
-    </nav>
-    <div class="section_project_text">
-        <div class="text_project">
-            <h1>Acesse alguns projetos que realizei durante a faculdade</h1>
+    <section class="section_projetos ho" id="section_projetos">
+        <div class="container_projetos ho">
+            <div class="box_projeto ho">
+                <div class="img_projeto ho">
+                    <img src="imagens/projeto_viagem.jpg" alt="print do meu site de viagens">
+                </div>
+                <div class="text_projeto">
+                    <h2>Projeto de responsividade</h2>
+                    <p>Nesse projeto, foi disponibilizado um modelo de tela principal de um site para que pudéssemos desenvolvê-lo e torná-lo responsivo. Eu optei pelo tema de agência de viagens.</p>
+                <div class="button">
+                    <a href="travel_site/index.html" target="_blank">
+                        <button type="button" class="button">Conferir projeto</button>
+                    </a>
+                </div>
+            </div>
+            <div class="box_projeto ho">
+                <div class="img_projeto ho">
+                    <img src="imagens/Sem título.jpg" alt="Duas placas de petri com crescimento bacteriano">
+                </div>
+                <div class="text_projeto ho">
+                    <h2>Pesquisa de Biotecnologia</h2>
+                    <p>Meu projeto de conclusão de curso sobre análises microbiológicas em busca de coliformes fecais em uma praia de Santa Catarina. avaliado com nota 9,7 pela banca.</p>
+                </div>
+                <div class="button_box ho">
+                    <a href="arquivos_pdf/tcc_senai.pdf" target="_blank">
+                        <button type="button" class="button">Conferir projeto</button>
+                    </a>
+                </div>
+            </div>
         </div>
-        
+    </section>
+</body>
+</html>
