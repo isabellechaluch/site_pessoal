@@ -6,6 +6,7 @@
 }
 * {
     margin: 0;
+    padding: 0;
 }
 body {
     font-family: 'oxygen';
@@ -24,34 +25,33 @@ header {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 nav {
     width: 100%;
-    padding: 1%;
-    box-sizing: border-box;
     position: fixed;
-    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.618);
+}
+.menu {
+    width: 95%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li {
+    width: 10%;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.menu {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: darkcyan;
-}
-.menu li {
-    text-align: center;
-    width: 30%;
-}
 .menu a {
     color: white;
-    text-align: center;
     text-decoration: none;
-    background-color: aqua;
+    font-size: 1rem;
+    padding: 1%;
+    text-shadow: 3px 3px 3px #000;
 }
 .container_header {
     width: 100%;
@@ -62,11 +62,11 @@ nav {
     background-color: rgba(128, 128, 128, 0.618);
 }
 .box_title {
-    width: 70%;
+    width: 80%;
     font-size: 2em;
     color: var(--cor-bege);
 }
-/*INDEX*/
+/*SOBRE MIM*/
 .section_sobre_mim {
     width: 100%;
     padding: 3%;
@@ -76,20 +76,23 @@ nav {
     align-items: center;
 }
 .my_picture {
-    width: 25%;
-    box-shadow: 5px 5px 5px #000; 
+    width: 40%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .my_picture img {
-    width: 100%;
+    width: 70%;
 }
 .texto_sobre_mim {
     width: 50%;
     text-align: justify;
     color: rgb(55, 56, 56);
     text-indent: 20px;
-    padding: 10px;
+    padding: 1%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .texto_sobre_mim h1{
     font-size: 2rem;
@@ -99,6 +102,25 @@ nav {
     width: 45%;
     height: 5px;
     background-color: var(--cor-marrom-escuro)
+}
+.button_box {
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    width: 45%;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: var(--cor-marrom-escuro);
+}
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
 /*HABILIDADES*/
 #section_hab {
@@ -292,16 +314,27 @@ footer {
     width: 10%;
 }
 @media screen and (max-width: 1100px) {
+
+}
+@media screen and (max-width: 750px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        width: 100%;
+    }
+    nav {
+        position: absolute;
+    }
+    .box_title {
+        font-size: 1rem;
+    }
     .section_sobre_mim {
         width: 100%;
         flex-direction: column;
     }
     .texto_sobre_mim, .my_picture {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 750px) {
-    .menu li {
         width: 100%;
     }
     .box_progr, .box_formacao {
