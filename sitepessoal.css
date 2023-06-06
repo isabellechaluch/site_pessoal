@@ -16,7 +16,7 @@ body {
     height: auto;
     overflow: hidden;
 }
-/*header repete para todos*/
+/*HEADER*/
 header {
     width: 100%;
     height: 750px;
@@ -89,7 +89,7 @@ nav {
     text-align: justify;
     color: rgb(55, 56, 56);
     text-indent: 20px;
-    padding: 1%;
+    padding: 2%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ nav {
 }
 .button {
     width: 45%;
-    padding: 1%;
+    padding: 2%;
     box-sizing: border-box;
     background-color: var(--cor-marrom-escuro);
 }
@@ -146,11 +146,69 @@ nav {
     color: white;
 }
 /*PROJETOS*/
-
-
+.section_projetos {
+    width: 100%;
+    background-color: var(--cor-marrom-claro);
+}
+.title_projetos {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.container_projetos {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box_projeto {
+    width: 30%;
+    background-color: white;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.box_img {
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+.box_img img {
+    width: 100%;
+}
+.box_projeto h2 {
+    text-align: center;
+}
+.text_projeto {
+    width: 100%;
+    height: 50%;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button_box_projeto {
+    width: 100%;
+}
+.button_box_projeto a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.button_projeto {
+    width: 45%;
+    background-color: #90604c;
+    color: white;
+    font-size: 1rem;
+    padding: 2%;
+    box-sizing: border-box;
+}
 /*CURSOS*/
 .section_cursos {
     width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,19 +243,15 @@ nav {
    color: rgb(65, 56, 57);
    font-size: 1.2rem;
 }
-.container_certificados {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-.box_certificados {
+.box_idioma {
     width: 50%;
-    height: auto;
-    overflow: hidden;
-}
-.box_certificados img {
-    width: 100%;
-    height: 90%;
+    text-align: center;
+    padding: 0.5%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #00000096;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 /*FORMACAO*/
 .section_formacao {
@@ -214,7 +268,7 @@ nav {
     justify-content: center;
 }
 .container_form {
-    width: 70%;
+    width: 65%;
     background-color: var(--cor-bege);
     padding: 2%;
     box-sizing: border-box;
@@ -233,7 +287,7 @@ nav {
 }
 .linha_formacao {
     width: 5px;
-    height: 500px;
+    height: 350px;
     background-color: black;
 }
 .box_formacao {
@@ -242,11 +296,12 @@ nav {
     color: var(--cor-textos);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .text_formacao {
     width: 100%;
-    height: 50%;
-    margin-bottom: 20%;
+    padding: 5%;
+    box-sizing: border-box;
 }
 /*EXPERIENCIAS*/
 .section_exp {
@@ -289,26 +344,28 @@ nav {
     text-align: center;
     color: var(--cor-textos);
 }
+/*FOOTER*/
 footer {
     width: 100%;
     background-color: #90604c;
-    padding: 2%;
-    box-sizing: border-box;
 }
 .title_footer {
     width: 100%;
-    height: auto;
-    overflow: hidden;
     text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
 }
 .container_footer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 }
 .contato {
     width: 20%;
     text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
 }
 .contato img {
     width: 10%;

@@ -1,0 +1,55 @@
+:root {
+    --cor-verde-escuro: #6e7f62;
+    --cor-verde: #919F88;
+    --cor-verde-claro: #C3CDBF;
+    --cor-cinza: #e0dcd9;
+}
+.navegacao {
+    background-color: var(--cor-verde-escuro);
+}
+.item_navegacao {
+    text-align: center;
+}
+.item_navegacao img {
+    width: 5%;
+}
+.navbar-brand img {
+    width: 20%;
+}
+.fundo {
+    background-color: var(--cor-cinza);
+}
+.slide {
+    width: 100%;
+}
+.chamada {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+}
+.texto {
+    padding: 5%;
+}
+.texto h2 {
+    color: var(--cor-verde-escuro);
+    text-align: center;
+}
+.btn {
+    width: 40%;
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde-escuro);
+}
+.img_sucu_branco {
+    padding: 4%;
+}
+.img_sucu_branco img {
+    width: 80%;
+}
+.cards {
+    background-color: var(--cor-verde);
+}
+.card-title {
+    text-align: center;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
