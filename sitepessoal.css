@@ -28,10 +28,11 @@ header {
 }
 nav {
     width: 100%;
+    background-color: rgba(128, 128, 128, 0.618);
     position: fixed;
     display: flex;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.618);
+    z-index: 1000;
 }
 .menu {
     width: 95%;
@@ -83,6 +84,8 @@ nav {
 }
 .my_picture img {
     width: 70%;
+    border: 1px solid var(--cor-marrom-escuro);
+    border-radius: 5px;
 }
 .texto_sobre_mim {
     width: 50%;
@@ -122,29 +125,6 @@ nav {
     color: white;
     font-size: 1rem;
 }
-/*HABILIDADES*/
-#section_hab {
-    width: 100%;
-    background-color: var(--cor-marrom-escuro);
-    padding: 5%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.box_hab {
-    width: 10%;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-}
-.title_hab {
-    width: 25%;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-}
 /*PROJETOS*/
 .section_projetos {
     width: 100%;
@@ -168,6 +148,10 @@ nav {
     background-color: white;
     padding: 2%;
     box-sizing: border-box;
+    border: 1px solid var(--cor-marrom-escuro);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .box_img {
     width: 100%;
@@ -182,13 +166,15 @@ nav {
 }
 .text_projeto {
     width: 100%;
-    height: 50%;
+    text-align: center;
+    font-size: 1rem;
     padding: 5%;
     box-sizing: border-box;
-    text-align: center;
-}
-.button_box_projeto {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
 }
 .button_box_projeto a {
     width: 100%;
@@ -223,7 +209,7 @@ nav {
 }
 .container_cursos {
     width: 60%;
-    padding: 1%;
+    padding: 2%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
@@ -249,9 +235,32 @@ nav {
     padding: 0.5%;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px #00000096;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+/*HABILIDADES*/
+#section_hab {
+    width: 100%;
+    background-color: var(--cor-marrom-escuro);
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box_hab {
+    width: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.title_hab {
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
 }
 /*FORMACAO*/
 .section_formacao {
@@ -370,15 +379,24 @@ footer {
 .contato img {
     width: 10%;
 }
-@media screen and (max-width: 1100px) {
-
+@media screen and (max-width: 1000px) {
+    .menu, .container_cursos {
+        width: 100%;
+    }
+    .container_projetos, .container_cursos {
+        flex-wrap: wrap;
+    }
+    .box_projeto, .box_cursos {
+        width: 45%;
+        margin-top: 3%;
+    }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
     .menu {
         flex-direction: column;
         align-items: center;
     }
-    .menu li {
+    .menu li, .texto_sobre_mim, .my_picture, .box_hab, .title_hab {
         width: 100%;
     }
     nav {
@@ -391,13 +409,7 @@ footer {
         width: 100%;
         flex-direction: column;
     }
-    .texto_sobre_mim, .my_picture {
-        width: 100%;
-    }
-    .box_progr, .box_formacao {
+    .box_projeto, .box_cursos, .box_idioma {
         width: 90%;
-    }   
-    .box_progr, .box_formacao {
-        margin-bottom: 2%;
     }
 }  
